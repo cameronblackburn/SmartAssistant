@@ -1,1 +1,24 @@
-Testing... again
+# Project Information
+
+## Contributors
+
+**Cameron Blackburn**
+Portfolio: [github.com/cameronblackburn](https://github.com/cameronblackburn)
+Contact E-mail: dev.cameronblackburn@outlook.com
+
+Personal project for the creation of a custom smart assistant with the goal of embedding to custom devices.
+
+CASE, the personal assistant will be able to function like any other smart\
+ assistant, however, with the hopes of taking advantage of open-source code,\
+ CASE will be able to parse inputs and provide custom GUI feedback for a range\
+ of features!
+
+# Requirements
+
+See the [Functional Requirements](Documents/Requirements.md#functional-requirements) section for details.
+
+## Version 0.01 Aims
+
+At this stage the main focus is to create a functional prototype using symbolic \
+AI to parse and respond a limited range of CLI commands and give\
+ a response with both text and TTS without the need for online dependencies.
