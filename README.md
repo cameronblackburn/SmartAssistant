@@ -13,6 +13,8 @@ CASE, the personal assistant will be able to function like any other smart\
  CASE will be able to parse inputs and provide custom GUI feedback for a range\
  of features!
 
+---
+
 # Requirements
 
 See the [Functional Requirements](Documents/Requirements.md#functional-requirements) section for details.
@@ -22,3 +24,9 @@ See the [Functional Requirements](Documents/Requirements.md#functional-requireme
 At this stage the main focus is to create a functional prototype using symbolic \
 AI to parse and respond a limited range of CLI commands and give\
  a response with both text and TTS without the need for online dependencies.
+
+---
+
+ # Specifications
+
+ See the [Smart Assistant Specifications](Documents/Specifications.md#version-001) v0.01

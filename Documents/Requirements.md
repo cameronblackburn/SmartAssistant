@@ -4,7 +4,7 @@
 ## Version 0.01
 (2025-06-04)
 
-### Design Decisions
+### 1. Design Decisions
 
 At this stage it is important to realise the scope and set realistic goals to avoid feature creep.
 * Programming Language - Python
@@ -16,20 +16,24 @@ At this stage it is important to realise the scope and set realistic goals to av
 * TTS Technology - pyttsx3
 ** No dependencies, this will allow for early focus elsewhere.
 
-### Functional Requirements
+### 2. Requirements
+
+### 2.2 Functional Requirements
 
  - Accept CLI and parse basic commands
  - Recognise predefined commands such as "time", "date", "exit"
  - Give output in terms of text and TTS
 
-### Non-Functional Requirements
+### 2.2 Non-Functional Requirements
 
 - Runs offline and needs no external dependencies or APIs
 - Minimal latency in responses
 - Modular design for feature addition
 
-### Future Steps to Consider
+### 3. Future Steps to Consider
 
 - Add online API functionality to gather information such as "weather"
 - Add additional commands set and improve parsing logic
 - Implement an online TTS for better quality voices
+
+---
