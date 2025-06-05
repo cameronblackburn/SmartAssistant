@@ -39,11 +39,15 @@ AI to parse and respond a limited range of CLI commands and give\
 
 # Version Updates
 
-## Current Version: v0.01 (Validation)
-
 See [Full Changelog](Documents/changelog.md#version-001) for all historical updates.
 
-### ✅ Summary of v0.01
+## Current Version v0.02 (Development)
+
+### Summary of v0.02
+
+## Current Version: v0.01 (Completed)
+
+### Summary of v0.01
 - Symbolic parser for basic CLI commands (`time`, `date`, `exit`)
 - Offline TTS using `pyttsx3` (`sapi5`)
 - Modular project structure with packages: `cli`, `tts`, `utils`

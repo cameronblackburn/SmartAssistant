@@ -1,5 +1,6 @@
 # ------------------------------- Libraries ---------------------------
 import datetime
+from src.utils import weather
 
 # ------------------------------- Constants ---------------------------
 CASE_REPLY_INVALID = "I don't understand..."
@@ -23,6 +24,9 @@ def handle_command(user_input):
     elif user_input == "date":
         today = datetime.date.today()
         reply = f"The date is {today}"
+        return reply
+    elif user_input == "weather":
+        reply = weather.get_weather()
         return reply
     elif user_input == "exit":
         reply = "Goodbye User!"

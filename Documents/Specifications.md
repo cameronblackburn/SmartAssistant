@@ -61,10 +61,4 @@ This document defines the technical specifications for the minimal viable CASE a
 
 ---
 
-## 7. Future Considerations
-
-- GUI module (TBD)
-- Natural language command parsing
-- Contextual memory or state
-- Neural network integration for fuzzy commands
 

@@ -1,6 +1,47 @@
 # Requirements
 (2025-06-04) *All dates are formatted YYYY-MM-DD*
 
+## Version X
+(YYYY-MM-DD)
+
+### 1. Design Decisions
+
+### 2. Requirements
+
+### 2.2 Functional Requirements
+
+
+### 2.2 Non-Functional Requirements
+
+
+### Future Steps to Consider
+
+---
+
+## Version 0.02
+(2025-06-05)
+
+### 1. Design Decisions
+
+### 2. Requirements
+
+### 2.2 Functional Requirements
+
+- Retrieve and utilise user's current location
+- Fetch and present current weather conditions based on location
+- Store and retrieve persistent user profile data (e.g. name, preferences)
+- Provide a simple graphical user interface (GUI) for interaction (presenting data only)
+
+### 2.2 Non-Functional Requirements
+
+### Future Steps to Consider
+
+- Code refactorisation into classes
+- Implementing dependency for customisable TTS (API)
+- True sanitization and tokenisation of CLI inputs
+
+---
+
 ## Version 0.01
 (2025-06-04)
 
