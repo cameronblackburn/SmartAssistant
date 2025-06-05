@@ -1,6 +1,6 @@
 # ------------------------------- Libraries ---------------------------
-from cli import parser
-from tts import offline_tts
+from src.cli import parser
+from src.tts import offline_tts
 #from tts import offline_tts
 # ------------------------------- Constants ---------------------------
 
@@ -16,12 +16,15 @@ def main():
     while True:
         print("Please give one of the following commands: 'time', 'date', " \
         "'exit'")
-        user_input = input("You: ").lower()
+        user_input = input("You: ")
         
-        parser.handle_command(user_input)
+        reply = parser.handle_command(user_input)
+        print(reply)
+        offline_tts.speak(reply)
             
         if user_input == "exit":
             break
 
         
-main()
+if __name__ == "__main__":
+    main()
