@@ -6,15 +6,15 @@
 Portfolio: [github.com/cameronblackburn](https://github.com/cameronblackburn)
 Contact E-mail: dev.cameronblackburn@outlook.com
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for coding conventions and style.
+See [contributing.md](contributing.md) for coding conventions and style.
 
 
 Personal project for the creation of a custom smart assistant with the goal of embedding to custom devices.
 
-CASE, the personal assistant will be able to function like any other smart\
- assistant, however, with the hopes of taking advantage of open-source code,\
- CASE will be able to parse inputs and provide custom GUI feedback for a range\
- of features!
+CASE, the personal assistant will be able to function like any other smart 
+assistant, however, with the hopes of taking advantage of open-source code, 
+CASE will be able to parse inputs and provide custom GUI feedback for a range 
+of features!
 
 ---
 

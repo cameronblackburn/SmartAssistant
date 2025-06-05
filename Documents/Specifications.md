@@ -1,4 +1,4 @@
-# Specifications for "CASE" (Context-Aware System Entity)
+# Specifications
 
 ## Version: 0.01
 *Date: 2025-06-04*

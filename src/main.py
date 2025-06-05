@@ -4,7 +4,13 @@ from src.tts import offline_tts
 #from tts import offline_tts
 # ------------------------------- Constants ---------------------------
 
-# ------------------------------- Methods -----------------------------    
+# ------------------------------- Methods -----------------------------
+
+def handle_interaction(user_input):
+    reply = parser.handle_command(user_input)
+    print(reply)
+    offline_tts.speak(reply)
+    return reply
 
 # ------------------------------- Main Declaration --------------------
 def main():
@@ -17,10 +23,7 @@ def main():
         print("Please give one of the following commands: 'time', 'date', " \
         "'exit'")
         user_input = input("You: ")
-        
-        reply = parser.handle_command(user_input)
-        print(reply)
-        offline_tts.speak(reply)
+        reply = handle_interaction(user_input)
             
         if user_input == "exit":
             break

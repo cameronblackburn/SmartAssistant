@@ -1,4 +1,4 @@
-# Requirements for "CASE" (Context-Aware System Entity)
+# Requirements
 (2025-06-04) *All dates are formatted YYYY-MM-DD*
 
 ## Version 0.01
