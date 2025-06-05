@@ -6,6 +6,9 @@
 Portfolio: [github.com/cameronblackburn](https://github.com/cameronblackburn)
 Contact E-mail: dev.cameronblackburn@outlook.com
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for coding conventions and style.
+
+
 Personal project for the creation of a custom smart assistant with the goal of embedding to custom devices.
 
 CASE, the personal assistant will be able to function like any other smart\
@@ -17,9 +20,9 @@ CASE, the personal assistant will be able to function like any other smart\
 
 # Requirements
 
-See the [Functional Requirements](Documents/Requirements.md#functional-requirements) section for details.
+See the [Functional Requirements](Documents/requirements.md#functional-requirements) section for details.
 
-## Version 0.01 Aims
+## Version 0.01 Aims (Completed)
 
 At this stage the main focus is to create a functional prototype using symbolic \
 AI to parse and respond a limited range of CLI commands and give\
@@ -29,4 +32,20 @@ AI to parse and respond a limited range of CLI commands and give\
 
  # Specifications
 
- See the [Smart Assistant Specifications](Documents/Specifications.md#version-001) v0.01
+ See the [Smart Assistant Specifications](Documents/specifications.md#version-001) v0.01
+
+
+---
+
+# Version Updates
+
+## Current Version: v0.01 (Validation)
+
+See [Full Changelog](Documents/changelog.md#version-001) for all historical updates.
+
+### ✅ Summary of v0.01
+- Symbolic parser for basic CLI commands (`time`, `date`, `exit`)
+- Offline TTS using `pyttsx3` (`sapi5`)
+- Modular project structure with packages: `cli`, `tts`, `utils`
+- Fully offline, runs on Windows CLI
+
