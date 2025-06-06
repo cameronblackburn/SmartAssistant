@@ -6,7 +6,7 @@
 Portfolio: [github.com/cameronblackburn](https://github.com/cameronblackburn)
 Contact E-mail: dev.cameronblackburn@outlook.com
 
-See [Documents/contributing.md](contributing.md) for coding conventions and style.
+See [contributing.md](Documents/contributing.md) for coding conventions and style.
 
 
 Personal project for the creation of a custom smart assistant with the goal of embedding to custom devices.
