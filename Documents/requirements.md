@@ -23,6 +23,11 @@
 
 ### 1. Design Decisions
 
+* GUI Technology: PySide6
+
+* Location and weather data
+** To be collected open-source, no need for keys etc.
+
 ### 2. Requirements
 
 ### 2.2 Functional Requirements
