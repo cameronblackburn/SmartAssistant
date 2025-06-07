@@ -1,18 +1,15 @@
-# ------------------------------- Libraries ---------------------------
-import datetime
+import datetime, math
 from src.utils import weather
 
-# ------------------------------- Constants ---------------------------
-CASE_REPLY_INVALID = "I don't understand..."
+REPLY_INVALID = "I don't understand..."
 
-# ------------------------------- Methods -----------------------------
 
 def handle_command(user_input):
     """This method implements a simple symbolic AI for CASE
     parsing user input and giving an appropriate response
     """
     if not user_input or not user_input.strip():
-        reply = CASE_REPLY_INVALID
+        reply = REPLY_INVALID
         return reply
     
 
@@ -23,7 +20,7 @@ def handle_command(user_input):
         return reply
     elif user_input == "date":
         today = datetime.date.today()
-        reply = f"The date is {today}"
+        reply = today.strftime(f"The date is %B {ordinal(today.day)}, %Y")
         return reply
     elif user_input == "weather":
         reply = weather.get_weather()
@@ -32,5 +29,10 @@ def handle_command(user_input):
         reply = "Goodbye User!"
         return reply
     else:
-        reply = CASE_REPLY_INVALID
+        reply = REPLY_INVALID
         return reply
+
+def ordinal(n):
+    """Return oridnal date helper function"""
+    return "%d%s" % (n, "tsnrhtdd"[(n//10%10!=1)*(n%10<4)*n%10::4])
+

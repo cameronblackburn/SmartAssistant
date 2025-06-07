@@ -1,20 +1,37 @@
-# Change Log for CASE
+# Change Log for Smart Assistant
 
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased] YYYY-MM-DD
 
 ### Added
-- Describe new features here.
 
 ### Changed
-- Describe updates or improvements here.
 
 ### Fixed
-- Describe bug fixes here.
 
 ### Removed
-- Describe any removed features here.
+
+---
+
+## [Unreleased] 2025-06-07
+
+### Added
+- New PySide6-based gui to replace TKinter
+- Input textbox and output display implemented in main window
+
+### Changed
+- Refactored file layout to comform to MVC design patter
+- Refactored controller to handle input/output logic for GUI
+- Imporved threading in TTS module to avoid speech cutoff
+- Changed parser output for better formatting and TTS performance
+
+
+### Fixed
+- some imports no longer found due to file location changes
+
+### Removed
+- N/A
 
 ---
 
