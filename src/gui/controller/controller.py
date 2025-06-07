@@ -1,7 +1,7 @@
 import sys, threading
 from PySide6 import QtWidgets
-from gui.view.main_window import MyMainWindow
-from gui.controller import parser, offline_tts
+from src.gui.view.main_window import MyMainWindow
+from src.gui.controller import parser, offline_tts
 
 class Controller:
     def __init__(self):
