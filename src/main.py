@@ -1,17 +1,14 @@
-# ------------------------------- Libraries ---------------------------
-from src.tts import offline_tts
-from src.gui.simple_gui import launch_gui
-# ------------------------------- Constants ---------------------------
+from src.gui.controller import offline_tts, controller
+from PySide6.QtWidgets import QApplication
+from src.gui.view.main_window import MyMainWindow
+import sys
 
-# ------------------------------- Methods -----------------------------
+def run_app():
+    app = QApplication(sys.argv)
+    window = MyMainWindow()
+    window.show()
+    sys.exit(app.exec())
 
-# ------------------------------- Main Declaration --------------------
-def main():
-
-    welcome_message = "Hello user!\nCASE is listening..."
-    print(welcome_message)
-    offline_tts.speak(welcome_message)
-
-        
 if __name__ == "__main__":
-    launch_gui()
+    app = controller.Controller()
+    app.run()

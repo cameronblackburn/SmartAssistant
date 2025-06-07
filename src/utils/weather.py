@@ -1,8 +1,6 @@
-# ------------------------------- Libraries ---------------------------
-import requests
+import requests, math
 from src.utils import location
 
-# ------------------------------- Constants ---------------------------
 
 WEATHER_CODES = {  # For parsing data returned from open-meteo
     0: "Clear sky",
@@ -34,12 +32,6 @@ WEATHER_CODES = {  # For parsing data returned from open-meteo
     96: "Thunderstorm with hail",
     99: "Thunderstorm with heavy hail"
 }
-
-# ------------------------------- Variables ---------------------------
-
-
-
-# ------------------------------- Methods -----------------------------
 
 def get_weather():
     """ Takes user location data and sends requests to open-meteo.
@@ -82,13 +74,22 @@ def get_weather():
         "precipitation_probability": daily["precipitation_probability_max"][0]
     }
 
-    temp_curr = summary['temperature_now']
-    temp_min = summary['temperature_min']
-    temp_max = summary['temperature_max']
+    temp_curr = temperature_rounder(summary['temperature_now'])
+    temp_min = temperature_rounder(summary['temperature_min'])
+    temp_max = temperature_rounder(summary['temperature_max'])
     precipitation_probability = summary['precipitation_probability']
 
     response = (f"It is currently {temp_curr} degrees celcius"
                 f" with a high of {temp_max} and low of {temp_min}.")
 
     return response
+
+
+def temperature_rounder(num):
+    """Remove decimals"""
+    decimal_part = num - math.floor(num)
+    if decimal_part <= 0.5:
+        return math.floor(num)
+    else:
+        return math.ceil(num)
 
