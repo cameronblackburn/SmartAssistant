@@ -1,4 +1,4 @@
-from src.gui.controller import controller  # Only import what you're actually using
+from src.gui.controller import controller
 import sys
 
 if __name__ == "__main__":
