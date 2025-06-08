@@ -82,7 +82,7 @@ def get_weather():
     response = (f"It is currently {temp_curr} degrees celcius"
                 f" with a high of {temp_max} and low of {temp_min}.")
 
-    return response
+    return response, summary
 
 
 def temperature_rounder(num):

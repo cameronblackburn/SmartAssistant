@@ -23,8 +23,8 @@ def handle_command(user_input):
         reply = today.strftime(f"The date is %B {ordinal(today.day)}, %Y")
         return reply
     elif user_input == "weather":
-        reply = weather.get_weather()
-        return reply
+        reply, summary = weather.get_weather()
+        return reply, summary
     elif user_input == "exit":
         reply = "Goodbye User!"
         return reply

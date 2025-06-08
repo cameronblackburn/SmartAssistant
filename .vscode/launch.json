@@ -2,10 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Run Main",
+      "name": "Python: main",
       "type": "python",
       "request": "launch",
-      "module": "src.main",
+      "program": "${workspaceFolder}/src/main.py",
+      "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "env": {
         "PYTHONPATH": "${workspaceFolder}/src"

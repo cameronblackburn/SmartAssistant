@@ -1,7 +1,6 @@
 import sys
 from PySide6 import QtCore, QtWidgets, QtGui
-from src.gui.view.components.date_and_time import MyDateTimeWindow
-
+from src.gui.view.components import date_and_time, weather
 
 class MyMainWindow(QtWidgets.QWidget):
     """Main window"""
@@ -17,14 +16,15 @@ class MyMainWindow(QtWidgets.QWidget):
 
         self.textbox = self.create_textbox() # Textbox for user input
         
-        self.date_time_widget = MyDateTimeWindow() # Date and Time
-        
+        self.date_time_widget = date_and_time.MyDateTimeWindow() # Date and Time
+        self.weather_widget = weather.MyWeatherWindow()
 
         self.layout = QtWidgets.QVBoxLayout(self) # Layout manager
         
         top_bar = QtWidgets.QVBoxLayout()
         top_bar.addStretch()
         top_bar.addWidget(self.date_time_widget)
+        top_bar.addWidget(self.weather_widget)
         
         self.layout.addLayout(top_bar)
         
